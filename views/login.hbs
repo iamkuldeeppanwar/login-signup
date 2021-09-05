@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+                crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+</head>
+
+<body>
+        <ul class="nav">
+                <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">home</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/login">login</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/signup">sign-up</a>
+                </li>  
+        </ul>
+        <form action="/login" method="POST">
+                <div class="mb-3">
+                        <label class="form-label" >Email address</label>
+                        <input type="email" class="form-control" name="email" placeholder="enter email" required>
+                        <div class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+</body>
+
+</html>
